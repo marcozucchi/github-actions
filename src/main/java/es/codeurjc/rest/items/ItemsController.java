@@ -55,6 +55,7 @@ public class ItemsController {
 		} else {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
+		
 	}
 
 	@DeleteMapping("/{id}")
@@ -67,6 +68,7 @@ public class ItemsController {
 		} else {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
+		System.out.println("Se ha eliminado un objeto");
 	}
 
 }
